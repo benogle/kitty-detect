@@ -10,6 +10,11 @@ exports.detectCats = function(canvas, options) {
   return kittydar.detectCats(canvas);
 }
 
+exports.getAllSizes = function(canvas, minSize, options) {
+  var kittydar = new Kittydar(options);
+  return kittydar.getAllSizes(canvas, minSize);
+}
+
 var defaultParams = {
   patchSize: 48,       // size of training images in px
   minSize: 48,         // starting window size

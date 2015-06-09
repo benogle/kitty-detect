@@ -21,7 +21,8 @@ module.exports = KittyDetect =
     kittyDetectView.destroy()
 
 atom.commands.add 'atom-workspace', 'kitty-detect:detect', =>
-  atom.workspace.open(DETECT_URI, split: 'right')
+  atom.workspace.open(DETECT_URI, split: 'right').then (view) ->
+    view.detect()
 
 createKittyDetectView = ->
   KittyDetectView ?= require './kitty-detect-view'
