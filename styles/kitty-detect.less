@@ -3,10 +3,16 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
+@import "syntax-variables";
 
 kitty-detect-view {
+  padding: 20px 0;
+  overflow: auto;
+  background-color: @syntax-background-color;
+
   .kitty-canvas {
     position: relative;
+    margin: 0 auto;
 
     canvas {
       position: absolute;
