@@ -9,13 +9,11 @@ module.exports = KittyDetect =
   subscriptions: null
 
   activate: (state) ->
-    # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     @subscriptions = new CompositeDisposable
 
     @subscriptions.add atom.workspace.addOpener (filePath) =>
       return unless filePath is DETECT_URI
       kittyDetectView ?= createKittyDetectView()
-      console.log kittyDetectView
       kittyDetectView
 
   deactivate: ->

@@ -1,11 +1,18 @@
+KittyCanvas = require './kitty-canvas'
+
 module.exports =
 class KittyDetectView extends HTMLElement
   initialize: ({@uri}) ->
-    # Create message element
     message = document.createElement('div')
     message.textContent = "The KittyDetect package is Alive! It's ALIVE!"
     message.classList.add('message')
     @appendChild(message)
+
+    @canvas = new KittyCanvas
+    @appendChild(@canvas.getCanvas())
+
+    @canvas.detectFromURL('atom://kitty-detect/lulz/wool3.jpg')
+
 
   getTitle: ->
     'Detect Kitten'
