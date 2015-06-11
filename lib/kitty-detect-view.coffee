@@ -4,13 +4,13 @@ module.exports =
 class KittyDetectView extends HTMLElement
   initialize: ({@uri}) ->
     @canvas = new KittyCanvas
-    @appendChild(@canvas.getCanvas())
+    @appendChild(@canvas.canHazCanvas())
 
   detect: ->
-    @canvas.detectFromURL('atom://kitty-detect/lulz/800w.jpg')
+    @canvas.detectFromURL('atom://kitty-detect/lulz/gracie8.jpg')
 
   getTitle: ->
-    'Detect Kitten'
+    'HUBOT Kitty Detect'
 
   getURI: -> @uri
 
