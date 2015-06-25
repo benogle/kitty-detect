@@ -10,7 +10,6 @@ module.exports = KittyDetect =
 
   activate: (state) ->
     @subscriptions = new CompositeDisposable
-
     @subscriptions.add atom.workspace.addOpener (filePath) =>
       return unless filePath is DETECT_URI
       kittyDetectView ?= createKittyDetectView()
