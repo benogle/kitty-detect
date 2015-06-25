@@ -1,5 +1,5 @@
-# kitty-detect package
+# kitty-detect
 
-A short description of your package.
+ROBOT CAT FACE DETECTOR.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![img](https://cloud.githubusercontent.com/assets/69169/8345903/044fecda-1abb-11e5-99d1-9c6de5c12268.png)
