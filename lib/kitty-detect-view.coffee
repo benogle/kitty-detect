@@ -7,7 +7,7 @@ class KittyDetectView extends HTMLElement
     @appendChild(@canvas.canHazCanvas())
 
   detect: ->
-    @canvas.detectFromURL('atom://kitty-detect/lulz/gracie8.jpg')
+    @canvas.detectFromURL('atom://kitty-detect/lulz/800w.jpg')
 
   getTitle: ->
     'HUBOT Kitty Detect'
